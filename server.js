@@ -11,7 +11,9 @@ app.get("/", (req, res) => {
 })
 
 
-app.get("/login")
+app.get("/login", (req, res) => {
+    res.render("login")
+})
 
 
 app.listen(3000, () => {
