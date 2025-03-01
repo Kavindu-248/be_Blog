@@ -9,8 +9,8 @@ CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT  UNIQUE,
     password TEXT
-);
-    `)
+    );
+`)
 
 
 db.exec(`
@@ -23,5 +23,7 @@ db.exec(`
         FOREIGN KEY (user_id) REFERENCES users(id)
     );
 
-    `)
+`)
+
+export default db
 
